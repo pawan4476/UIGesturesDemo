@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPW-wb-nT9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="92q-Ef-RGi"/>
+                                    <constraint firstAttribute="height" constant="21" id="H8O-kg-WEA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="KPW-wb-nT9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8uS-oo-4JE"/>
+                            <constraint firstItem="KPW-wb-nT9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HVq-8U-vlR"/>
+                            <constraint firstItem="KPW-wb-nT9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96" id="bSS-tN-qij"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hnd-s7-Ghl" appends="YES" id="mgX-kG-Gw9"/>
+                            <outletCollection property="gestureRecognizers" destination="5k2-x7-9tc" appends="YES" id="qhM-Dx-gMG"/>
+                            <outletCollection property="gestureRecognizers" destination="uwC-Mf-eT1" appends="YES" id="gZv-pk-wsq"/>
+                            <outletCollection property="gestureRecognizers" destination="o2d-de-1nO" appends="YES" id="eJ1-ox-MBP"/>
+                            <outletCollection property="gestureRecognizers" destination="G0k-pG-Ojq" appends="YES" id="2SM-0F-7xg"/>
+                            <outletCollection property="gestureRecognizers" destination="GUf-af-EJO" appends="YES" id="ztP-4a-uzT"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="lb" destination="KPW-wb-nT9" id="CRg-KJ-LyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hnd-s7-Ghl">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="MU5-hN-Q7v"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="5k2-x7-9tc">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="gya-41-z7b"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="uwC-Mf-eT1">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="XlM-sF-EBy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <rotationGestureRecognizer id="o2d-de-1nO">
+                    <connections>
+                        <action selector="rotation:" destination="BYZ-38-t0r" id="tUK-fk-afd"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="G0k-pG-Ojq">
+                    <connections>
+                        <action selector="panGesture:" destination="BYZ-38-t0r" id="MWJ-S8-QBC"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="GUf-af-EJO">
+                    <connections>
+                        <action selector="longPress:" destination="BYZ-38-t0r" id="H1w-2q-0Jg"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="194" y="134"/>
+        </scene>
+    </scenes>
+</document>
